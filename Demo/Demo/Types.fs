@@ -3,7 +3,7 @@
 module Types=
 
  type SquareType = {
-        A : float
+        Side : float
         } 
 
  type CircleType = {
