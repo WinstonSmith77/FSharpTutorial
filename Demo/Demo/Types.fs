@@ -10,10 +10,10 @@ module Types=
         Radius : float
         } 
 
-  type Shape = 
+  type ShapeType = 
         | Square of SquareType
         | Circle of CircleType
-        | Group of Shape List 
+        | Group of ShapeType List 
 
 
  
