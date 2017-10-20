@@ -4,9 +4,16 @@ open Types
 
 module Methods =
        open System
-       
-       let AreaOfSquare a =
+
+       let private AreaOfSquare a =
             a.A * a.A
 
-       let AreaOfCircle a =
+       let private AreaOfCircle a =
             a.Radius * a.Radius * Math.PI * 2.0
+
+       let AreaOfShape a =
+            match a with
+                | Circle c -> AreaOfCircle c
+                | Square sq -> AreaOfSquare sq
+       
+     

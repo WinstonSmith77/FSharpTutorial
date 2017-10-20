@@ -13,9 +13,11 @@ module MethodTests=
     
         [<TestCase(2, ExpectedResult=4)>]
         member x.SquareArea a =
-            AreaOfSquare {A = a}
+            let square = Square {A = a}
+            AreaOfShape square
 
         [<Test>]
         member x.CircleArea ()  =
-            let area = AreaOfCircle {Radius = 2.0}
+            let circle = Circle {Radius = 2.0}
+            let area = AreaOfShape circle
             Assert.AreEqual(area, areaOfTestCircle)

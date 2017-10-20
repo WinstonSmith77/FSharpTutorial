@@ -1,10 +1,17 @@
 ﻿module Types
 
- type Square = {
+ type SquareType = {
         A : float
         } 
 
- type Circle = {
+ type CircleType = {
         Radius : float
         } 
+
+  type Shape = 
+        | Square of SquareType
+        | Circle of CircleType
+
+
+ 
 
