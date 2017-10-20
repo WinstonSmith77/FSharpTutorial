@@ -4,3 +4,7 @@
         A : float
         } 
 
+ type Circle = {
+        Radius : float
+        } 
+
