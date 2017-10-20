@@ -11,6 +11,7 @@
   type Shape = 
         | Square of SquareType
         | Circle of CircleType
+        | Group of Shape List 
 
 
  
