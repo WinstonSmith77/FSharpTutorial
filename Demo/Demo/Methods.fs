@@ -1,5 +1,8 @@
 ﻿namespace Demo
 
-module Methods =
+open Types
 
-        let AreaOfSquare a = a * a
+module Methods =
+       
+       let AreaOfSquare a =
+            a.A * a.A
