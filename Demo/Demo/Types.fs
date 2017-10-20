@@ -1,4 +1,6 @@
-﻿module Types
+﻿namespace Demo
+
+module Types=
 
  type SquareType = {
         A : float

@@ -2,7 +2,7 @@
 
 open NUnit.Framework
 open Demo.Methods
-open Types
+open Demo.Types
 
 module MethodTests=
 
