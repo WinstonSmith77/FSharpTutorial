@@ -18,7 +18,7 @@ module Methods =
                 Math.PI * 2.0 * a.Radius
 
        let private  FoldGroup callback group  =
-                List.fold (fun acc shape -> acc + callback shape) 0.0 group
+                Seq.fold (fun acc shape -> acc + callback shape) 0.0 group
 
        let rec private Invoke circle square  a =
 

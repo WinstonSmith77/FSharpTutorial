@@ -37,7 +37,7 @@ module MethodTests=
         member x.GroupArea ()  =
             let c = Circle {Radius = 2.0}
             let square = Square {Side = 2.0}
-            let group = Group [c; square]
+            let group = Group [|c; square|]
             let area = Area group
             Assert.AreEqual(area, 4.0 + areaOfTestCircle)
 

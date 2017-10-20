@@ -13,7 +13,7 @@ module Types=
   type ShapeType = 
         | Square of SquareType
         | Circle of CircleType
-        | Group of ShapeType List 
+        | Group of ShapeType seq 
 
 
  
